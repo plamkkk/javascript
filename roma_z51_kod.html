@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozwiązanie zadania 51</title>
+    <script type="text/javascript">
+        function okno_zamknij_siejka()
+        {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <textarea name="siejka" cols="120" rows="55" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 51</title>
+    <script>
+        var ile_rom = parseInt(prompt("Ile razy powtórzyć ?"));
+
+        var tekst_rom = prompt("Podaj Twoje inicjały :");
+
+        for (var i = 1; i <= ile_rom; i++) {
+
+            for (var k = 1; k <= i; k++) {
+                document.write("&nbsp;");
+            }
+
+            document.write(i + "_" + tekst_rom + "_" + i + "<br>");
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
+        </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Imię i nazwisko na przemian</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        const nazwisko = "romanovskyi";
+        const imie = "dima";
+        const ile_razy = 13;
+        const wielkosc_liter = 42;
+
+        document.write("ilość wykonania pętli = " + ile_razy + "<br>");
+        document.write("wielkość liter = " + wielkosc_liter + "px<br><br>");
+
+        for(let i=1; i<=ile_razy; i++) {
+            if(i % 2 === 1) {
+            document.write("<span style='font-size:" + wielkosc_liter + "px'>" + nazwisko + "</span><br>");
+            } else {
+            document.write("<span style='font-size:" + wielkosc_liter + "px'>" + imie + "</span><br>");
+            }
+        }
+        </script>
+    </body>
+    </html>

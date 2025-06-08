@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 45</title>
+</head>
+<body>
+    <script>
+        var nazwisko = "romanovskyi";
+        var imie = "dima";
+        var liczba_liter_nazwiska = nazwisko.length; 
+        var Ile_razy_wyświetlić = (liczba_liter_nazwiska % 4) + 10; 
+        var Wielkość_liter = (liczba_liter_nazwiska % 3) + 40; 
+
+        var i_r = parseInt(prompt("Podaj liczbę:"));
+        document.write("<h1>Ile razy wyświetlić: " + Ile_razy_wyświetlić + "</h1>");
+        document.write("<h1>Wielkość czcionki: " + Wielkość_liter + "px</h1>");
+
+        if (i_r % 2 == 0) {
+            for (let i = 0; i < Ile_razy_wyświetlić; i++) {
+                document.write('<p style="color: blue; font-size: ' + Wielkość_liter + 'px;">' + nazwisko + '</p>');
+            }
+        } else {
+            for (let i = 0; i < Ile_razy_wyświetlić; i++) {
+                document.write('<p style="color: green; font-size: ' + Wielkość_liter + 'px;">' + imie + '</p>');
+            }
+        }
+    </script>
+</body>
+</html>

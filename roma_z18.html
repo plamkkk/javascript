@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>   
+<head>    
+<title> Użycie fukcji </title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:navy;font-size:50px;"> 
+<script language="JavaScript"> 
+var a=parseFloat(prompt("a=","")); 
+var b=parseFloat(prompt("b=","")); 
+
+    function suma_rom(a, b) { 
+        return a + b; 
+            } 
+
+        function ode_rom(a, b) { 
+    return a - b; 
+            } 
+
+    function mno_rom(a, b) { 
+            return a * b; 
+                } 
+
+        function pot_rom(a, b) { 
+    return Math.pow(a,b)
+    } 
+
+
+    function reszta_z_dzielenia_rom(a, b) { 
+        return a%b;
+                } 
+
+
+        document.write("suma="+suma_rom(a,b)+"<br>");
+
+    document.write("odejmowanie="+ode_rom(a,b)+"<br>");
+
+        document.write("mnozenie="+mno_rom(a,b)+"<br>");
+
+    document.write("potengowanie="+pot_rom(a,b)+"<br>");
+
+    document.write("reszta z dzielenia ="+reszta_z_dzielenia_rom(a,b)+"<br>");
+
+</script> 
+</div> 
+</body> 
+</html> 

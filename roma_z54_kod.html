@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozwiązanie zadania 54</title>
+    <script type="text/javascript">
+        function okno_zamknij_siejka()
+        {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <textarea name="siejka" cols="120" rows="55" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 54</title>
+</head>
+<body>
+    <script>
+        var imie = prompt("Podaj swoje imię:");
+        var nazwisko = prompt("Podaj swoje nazwisko:");
+
+        var a_rom = (nazwisko.length % 4) + 5;
+        var b_rom = (imie.length % 6) + 20; 
+
+
+        for (var i = 0; i < b_rom; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+
+        for (var i = 0; i < a_rom - 2; i++) {
+            document.write("*");
+            for (var j = 0; j < b_rom - 2; j++) {
+                document.write("&nbsp;");
+            }
+            document.write("*<br>");
+        }
+
+
+        if (a_rom > 1) {
+            for (var i = 0; i < b_rom; i++) {
+                document.write("*");
+            }
+        }
+    </script>
+</body>
+</html>
+
+        </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+</body>
+</html>

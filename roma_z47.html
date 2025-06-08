@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 47</title>
+</head>
+
+<body>
+    <h2>Sprawdzenie poprawności boków trójkąta</h2>
+    <button onclick="wpisz()">Wprowadź boki trójkąta</button>
+    <p id="wynik"></p>
+
+    <script>
+        function wpisz() {
+            let a_rom, b_rom, c_rom;
+            do {
+                a_rom = parseFloat(prompt("Podaj bok a:"));
+                b_rom = parseFloat(prompt("Podaj bok b:"));
+                c_rom = parseFloat(prompt("Podaj bok c:"));
+            } while (
+                isNaN(a_rom) || isNaN(b_rom) || isNaN(c_rom) ||
+                a_rom <= 0 || b_rom <= 0 || c_rom <= 0 || (a_rom + b_rom <= c_rom) || (a_rom + c_rom <= b_rom) || (b_rom + c_rom <= a_rom)
+            );
+
+            document.getElementById("wynik").innerText =
+                "Boki tworzą poprawny trójkąt: a=" + a_rom + ", b=" + b_rom + ", c=" + c_rom;
+        }
+    </script>
+</body>
+
+</html>

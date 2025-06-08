@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sprawdzenie danych Romanovskyi</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+do {
+    var liczba1 = prompt("wysokość=", "");
+    var h_rom = parseFloat(liczba1);
+}
+while (h_rom <= 0);
+
+do {
+    var liczba2 = prompt("podstawę=", "");
+    var a_rom = parseFloat(liczba2);
+}
+while (!(a_rom > 0));
+
+var Pole = a_rom * h_rom / 2;
+document.write("Pole=" + Pole.toFixed(2) + " cm^2" + "<br>");
+</script>
+</div>
+</body>
+</html>

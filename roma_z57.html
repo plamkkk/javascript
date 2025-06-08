@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 57</title>
+</head>
+
+<body style="font-size: 25px;color: red;">
+    <script>
+        var i_r;
+
+        for (i_r = 26; i_r <= 41; i_r++) {
+            var pierw_rom = Math.sqrt(i_r);
+            document.write("i=" + i_r + "&nbsp;&nbsp;&nbsp;" + "pierw_2(" + i_r + ") = " + pierw_rom.toFixed(2));
+            var pierw4_rom = Math.sqrt(pierw_rom);
+            document.write("&nbsp;&nbsp;&nbsp;" + "pierw_4(" + i_r + ") = " + pierw4_rom.toFixed(2) + "<br>");
+        }
+    </script>
+</body>
+
+</html>

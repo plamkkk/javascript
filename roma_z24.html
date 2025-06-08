@@ -1,0 +1,34 @@
+
+
+<html> 
+<head> 
+<title>
+
+</title>
+</head>
+<body>
+    <div style="color:darkblue;font-size:43px;">
+ <script language="JavaScript">
+    
+
+    var x1_rom=parseFloat(prompt("x1=",""));
+    var x2_rom=parseFloat(prompt("x2=",""));
+    var x1_rad = (x1_rom*Math.PI)/180;
+
+
+        document.write("x1 = "+x1_rom+"&nbsp &nbsp &nbsp &nbsp &nbsp x2="+x2_rom+"<br>");
+        document.write("x1 = "+x1_rom+"&nbsp &nbsp &nbsp &nbsp &nbsp x1="+x1_rad.toFixed(2)+"<br>");
+
+    var y1 = 3*(x1_rom*(6/8));
+    var y2 = 2 * Math.cos(x1_rom) + 3 * Math.sin(x1_rom);
+    var y3 = Math.pow(Math.pow(x1_rom,5)+ 2 * Math.pow(x2_rom,4) * Math.abs(x1_rom-x2_rom),1/3)
+
+    
+        document.write("y1 = "+y1.toFixed(2)+"<br>");
+        document.write("y2 = "+y2.toFixed(2)+"<br>");
+        document.write("y3 = "+y3.toFixed(2)+"<br>");
+
+</script>
+</div>
+</body>
+</html>

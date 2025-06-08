@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozwiązanie zadania 43</title>
+    <script type="text/javascript">
+        function okno_zamknij_siejka()
+        {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <textarea name="siejka" cols="120" rows="55" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pętla z prompt - Romanovskyi</title>
+</head>
+<body>
+    <script>
+        let koniec_petli_rom = parseInt(prompt("Podaj koniec pętli:", "10"));
+        for (let i_r = 1; i_r <= koniec_petli_rom; i_r++) {
+            document.write("wyswietlam: " + i_r + "<br>");
+        }
+    </script>
+</body>
+</html>
+        </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+</body>
+</html>
